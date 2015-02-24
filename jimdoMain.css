@@ -1,0 +1,174 @@
+div[id*='cc-m-gallery-'] {
+  margin:           0px auto !important;
+  text-align:       center;
+  font-size:        0em;
+}
+
+.ccgalerie div[class*='thumb_'] {
+  margin:           0px auto !important;
+  display:          inline-block;
+  float:            none !important;
+}
+
+/* BLOG: Don't underline links in headlines */
+.j-blogarticle a:link, 
+.j-blogarticle a:visited {
+  text-decoration: underline;
+}
+
+a.j-blog-header,
+header.j-blog-meta a {
+  text-decoration:  none !important;
+}
+
+h2.j-blog-headline {
+  line-height:      100% !important;
+}
+
+div.j-blogSelection {
+  margin-top:       0px !important;
+  padding-top:      0px !important;
+}
+
+a.blogreadmore {
+  text-transform:   uppercase;
+  font-family:      Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe" !important;
+}
+
+/* BLOG: Center article dates below headlines */
+time.datetime {
+  display:          table;
+  float:            none;
+  text-transform:   uppercase;
+  margin:           0px auto;
+  padding:          0px;
+  font-family:      Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe";
+  font-weight:      normal;
+  font-style:       normal;
+}
+
+.datetime span {
+  margin-bottom:    25px;
+}
+
+/* BLOG: Hide post meta data */
+.postmeta {
+  display:          none;
+}
+
+/* HOME: Use full page for emotion header */
+.cc-page-index .tpl-spacing {
+  min-height:           100vh;
+  /* background-image: url('https://dl.dropboxusercontent.com/s/p50pw47yrrft0ue/hipster_anchor_bg_grey.png'); */
+  /* background-image: url('https://dl.dropboxusercontent.com/s/a17mndt99bofa7c/hipster_anchor_bg_white.png');
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* background-attachment: fixed; */
+}
+
+/* GENERAL: Don't show emotion header on all non-index sites */
+.tpl-spacing {
+  min-height:       0vh;
+  max-height:       0vh;
+}
+
+/* INDEX: Put navigation on top */
+.cc-page-index .tpl-navigation {
+  background-color: rgba(255,255,255, 0.65) !important;
+  position:         fixed;
+  top:              0;
+  left:             0;
+  right:            0;
+  z-index:          500;
+}
+
+/* INDEX: Overwrite JS calculated margin*/
+.cc-page-index div#content_area {
+  margin-top:       0px !important;
+}
+
+body:not(.cc-page-index) {
+  background: rgb(51,51,52) !important;
+}
+
+/* GENERAL: Overwrite menu transparency on all non-index sites */
+body:not(.cc-page-index) .tpl-navigation {
+  background-color: rgba(255,255,255, 0.65) !important;
+  position:         fixed;
+  left:             0;
+  right:            0;
+  z-index:          500;
+}
+
+.sidebar-options {
+  padding:          40px 10px !important;
+  min-height:       0px !important;
+}
+
+div#logotxt {
+  color:            rgb(153,153,153);
+  text-transform:   uppercase;
+  font-family:      Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe";
+  font-style:       normal;
+  font-weight:      normal;
+  font-size:        16px;
+}
+
+span.logotxt {
+  color:            rgb(206,0,0);
+}
+
+/* Responsive video modules */
+.cc-m-video-wrapper {
+  position:         relative;
+  padding-bottom:   56.25%;
+  padding-top:      0px;
+  height:           0 !important;
+  overflow:         hidden;
+  width:            auto !important;
+}
+iframe[id*='cc-m-video-container'] {
+   position:        absolute;
+   top:             0;
+   left:            0;
+   width:           100%;
+   height:          100%;
+}
+
+input[data-action='formButton'] {
+  color:            rgb(255,255,255);
+  font-family:      Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe" !important;
+}
+
+input.submitUser {
+  text-transform:   uppercase;
+}
+
+span.j-m-required {
+  color:            rgb(155,0,0);
+}
+
+form.cc-m-form .cc-m-form-view-element.cc-m-required > label div:after {
+    color:          rgb(155,0,0);
+}
+
+div#disqus_thread {
+  margin-top:       50px;
+}
+div#disqus_thread a:link {
+  color:            rgb(206,0,0);
+}
+
+/* Do not show Disqus widgets on the blog post overview */
+body:not(.cc-page-blog) div#disqus_thread {
+  display:          none;
+}
+
+div.n.j-text p {
+  hyphens:          auto;
+  -ms-hyphens:      auto;
+  -moz-hyphens:     auto;
+  -webkit-hyphens:  auto;
+  -webkit-locale:   de;
+  text-align:       justify;
+}
