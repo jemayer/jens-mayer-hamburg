@@ -164,6 +164,7 @@ body:not(.cc-page-blog) div#disqus_thread {
   display:          none;
 }
 
+/*
 div.n.j-text p {
   hyphens:          auto;
   -ms-hyphens:      auto;
@@ -172,3 +173,4 @@ div.n.j-text p {
   -webkit-locale:   de;
   text-align:       justify;
 }
+*/
