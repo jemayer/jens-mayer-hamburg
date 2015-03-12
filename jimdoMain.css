@@ -166,3 +166,9 @@ div[id*='cc-m-gallery-'] {
   text-align:       center;
   font-size:        0em;
 }
+
+.ccgalerie div[class*='thumb_'] {
+  margin:           0px auto !important;
+  display:          inline-block;
+  float:            none !important;
+}
