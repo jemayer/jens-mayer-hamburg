@@ -160,3 +160,9 @@ div.n.j-text p {
   -webkit-locale:   de;
   text-align:       justify;
 }
+
+div[id*='cc-m-gallery-'] {
+  margin:           0px auto !important;
+  text-align:       center;
+  font-size:        0em;
+}
