@@ -172,3 +172,62 @@ div[id*='cc-m-gallery-'] {
   display:          inline-block;
   float:            none !important;
 }
+
+/* Hide navigation when not needed: http://wicky.nillia.ms/headroom.js/ */
+.headroom {
+    transition: transform 200ms linear;
+    -webkit-transition: -webkit-transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+@keyframes scroll-down {
+    from {background-color: rgba(0, 0, 0, 0.65);}
+    to {background-color: rgba(128, 128, 128, 0.65);}
+}
+@keyframes scroll-down-fontcolor {
+    from {color: rgb(128,128,128);}
+    to {color: rgb(255,255,255);}
+
+}
+@-webkit-keyframes scroll-down-fontcolor {
+    from {color: rgb(128,128,128);}
+    to {color: rgb(255,255,255);}
+
+}
+
+div.scroll-down {
+  position: absolute;
+  top: 95vh;
+  left: 0;
+  right: 0;
+}
+
+div.inner-scroll-down {
+  margin: 0px auto;
+  padding: 5px;
+  border-radius: 20px;
+  font-family:      Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe";
+  color: #ccc;
+  letter-spacing: 2px;
+  width: 15em;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(32, 32, 32, 0.65);
+  animation-name: scroll-down-fontcolor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  -webkit-animation-name: scroll-down-fontcolor;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+
+}
