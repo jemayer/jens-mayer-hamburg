@@ -1,5 +1,5 @@
 /* BLOG: Don't underline links in headlines */
-.j-blogarticle a:link, 
+.j-blogarticle a:link,
 .j-blogarticle a:visited {
   text-decoration: underline;
 }
@@ -44,6 +44,10 @@ time.datetime {
   display:          none;
 }
 
+.body {
+  background-attachment: scroll;
+}
+
 /* HOME: Use full page for emotion header */
 .cc-page-index .tpl-spacing {
   min-height:           100vh;
@@ -56,12 +60,11 @@ time.datetime {
 
 /* GENERAL: Don't show emotion header on all non-index sites */
 .tpl-spacing {
-  min-height:       0vh;
-  max-height:       0vh;
+  min-height:       100vh;
 }
 
 /* INDEX: Put navigation on top */
-.cc-page-index .tpl-navigation {
+.tpl-navigation {
   background-color: rgba(255,255,255, 0.65) !important;
   position:         fixed;
   top:              0;
@@ -70,13 +73,13 @@ time.datetime {
   z-index:          500;
 }
 
-/* INDEX: Overwrite JS calculated margin*/
-.cc-page-index div#content_area {
-  margin-top:       0px !important;
+.subnavigation-colors ul {
+  padding: 0px 0px 15px 0px;
 }
 
-body:not(.cc-page-index) {
-  background: rgb(51,51,52) !important;
+/* INDEX: Overwrite JS calculated margin*/
+div#content_area {
+  margin-top:       0px !important;
 }
 
 /* GENERAL: Overwrite menu transparency on all non-index sites */
@@ -186,6 +189,8 @@ div[id*='cc-m-gallery-'] {
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
 }
+
+/* Animate scroll-down notification */
 @keyframes scroll-down {
     from {background-color: rgba(0, 0, 0, 0.65);}
     to {background-color: rgba(128, 128, 128, 0.65);}
@@ -203,16 +208,20 @@ div[id*='cc-m-gallery-'] {
 
 div.scroll-down {
   position: absolute;
-  top: 95vh;
+  top: 93vh;
   left: 0;
   right: 0;
+}
+
+body:not(.cc-page-index) div.scroll-down {
+  top: 93vh;
 }
 
 div.inner-scroll-down {
   margin: 0px auto;
   padding: 5px;
   border-radius: 20px;
-  font-family:      Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe";
+  font-family: Lato, Helvetica, "Helvetica Neue", Arial, sans-serif, "websafe";
   color: #ccc;
   letter-spacing: 2px;
   width: 15em;
@@ -229,5 +238,9 @@ div.inner-scroll-down {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   -webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
-
 }
+
+/* Individual page backgrounds */
+#page-1741597393  { background-image: url(http://jens.mayer.hamburg/app/download/12096634625/claudia-mannheim.jpg?t=1432327207); }
+#page-1089007181 { background-image: url(http://jens.mayer.hamburg/app/download/12096665025/jens-1.jpg?t=1432327501); }
+#page-1744944693 { background-image: url(http://jens.mayer.hamburg/app/download/12096687425/bench.jpg?t=1432327865); }
